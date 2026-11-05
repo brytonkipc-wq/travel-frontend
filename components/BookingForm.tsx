@@ -39,7 +39,7 @@ export default function BookingForm({ destination }: { destination: any }) {
       return;
     }
 
-    const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://elsewhere.austratraininginstitute.co.ke";
+    const baseUrl = process.env.NEXT_PUBLIC_API_URL || "https://elsewhere.austratraininginstitute.co.ke";
 
     try {
       // Send booking request to NestJS backend

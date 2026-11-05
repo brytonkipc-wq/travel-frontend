@@ -6,7 +6,7 @@ async function fetchBackendData(endpoint: string) {
   const baseUrl =
     process.env.NEXT_PUBLIC_API_URL ??
     process.env.API_URL ??
-    "http://elsewhere.austratraininginstitute.co.ke";
+    "https://elsewhere.austratraininginstitute.co.ke";
 
   try {
     const res = await fetch(`${baseUrl.replace(/\/$/, "")}${endpoint}`, {

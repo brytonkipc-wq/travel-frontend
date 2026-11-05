@@ -19,8 +19,8 @@ interface Destination {
   highlights?: string[];
 }
 
-const API_DESTINATIONS = "http://elsewhere.austratraininginstitute.co.ke/destinations";
-const API_CATEGORIES = "http://elsewhere.austratraininginstitute.co.ke/categories";
+const API_DESTINATIONS = "https://elsewhere.austratraininginstitute.co.ke/destinations";
+const API_CATEGORIES = "https://elsewhere.austratraininginstitute.co.ke/categories";
 
 export default function AdminDashboardPage() {
   const [items, setItems] = useState<Destination[]>([]);

@@ -10,7 +10,7 @@ async function BookingContent({ params }: { params: Promise<{ id: string }> }) {
 
   let booking = null;
   try {
-    const res = await fetch(`http://elsewhere.austratraininginstitute.co.ke/bookings/${id}`, { cache: 'no-store' });
+    const res = await fetch(`https://elsewhere.austratraininginstitute.co.ke/bookings/${id}`, { cache: 'no-store' });
     if (res.ok) {
       booking = await res.json();
     }

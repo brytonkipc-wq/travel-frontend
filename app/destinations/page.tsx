@@ -21,7 +21,7 @@ interface Journey {
   duration: string;
 }
 
-const API_BASE = "http://elsewhere.austratraininginstitute.co.ke";
+const API_BASE = "https://elsewhere.austratraininginstitute.co.ke";
 
 export default function DestinationsPage() {
   const [categories, setCategories] = useState<Category[]>([]);

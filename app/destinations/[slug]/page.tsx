@@ -8,7 +8,7 @@ async function fetchDestination(slug: string) {
   const baseUrl =
     process.env.NEXT_PUBLIC_API_URL ??
     process.env.API_URL ??
-    "http://elsewhere.austratraininginstitute.co.ke";
+    "https://elsewhere.austratraininginstitute.co.ke";
 
   const response = await fetch(
     `${baseUrl.replace(/\/$/, "")}/destinations/${encodeURIComponent(slug)}`,

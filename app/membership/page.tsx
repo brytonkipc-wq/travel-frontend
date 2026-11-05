@@ -24,7 +24,7 @@ export default function MembershipPage() {
   const [message, setMessage] = useState("");
 
   const baseUrl =
-    process.env.NEXT_PUBLIC_API_URL || "http://elsewhere.austratraininginstitute.co.ke";
+    process.env.NEXT_PUBLIC_API_URL || "https://elsewhere.austratraininginstitute.co.ke";
 
   useEffect(() => {
     const savedMember = localStorage.getItem("elsewhere_member");

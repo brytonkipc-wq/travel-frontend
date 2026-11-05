@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-const API_URL = "http://elsewhere.austratraininginstitute.co.ke/categories";
+const API_URL = "https://elsewhere.austratraininginstitute.co.ke/categories";
 
 export default function NewCategoryPage() {
   const router = useRouter();

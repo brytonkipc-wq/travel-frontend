@@ -50,7 +50,7 @@ export default function MemberTripsPage() {
         }
 
         const baseUrl =
-          process.env.NEXT_PUBLIC_API_URL || "http://elsewhere.austratraininginstitute.co.ke";
+          process.env.NEXT_PUBLIC_API_URL || "https://elsewhere.austratraininginstitute.co.ke";
 
         // Retrieve bookings belonging to this member only
         const res = await fetch(

@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 export const instant = false;
 
 async function fetchApi(path: string) {
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? process.env.API_URL ?? "http://elsewhere.austratraininginstitute.co.ke";
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? process.env.API_URL ?? "https://elsewhere.austratraininginstitute.co.ke";
   const response = await fetch(`${baseUrl.replace(/\/$/, "")}${path}`, { cache: "no-store" });
 
   if (!response.ok) {
